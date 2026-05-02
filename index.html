@@ -3,147 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PokerTime — Learn Poker Strategy in 5 Min/Day</title>
-<meta name="description" content="Free poker trainer built like Duolingo. 30 modules, interactive quizzes, combo streaks, spaced repetition. Learn on your phone in minutes.">
+<title>PokerTime — The Poker Trainer That Doesn't Suck</title>
+<meta name="description" content="Free poker trainer built like Duolingo. 30 modules from basics to championship play. Combo streaks, spaced repetition, no boring videos.">
 <meta name="theme-color" content="#0f0a1a">
 <meta property="og:title" content="PokerTime — Learn Poker in 5 Min/Day">
-<meta property="og:description" content="Free poker trainer. 30 modules, combo streaks, spaced repetition. Like Duolingo for poker.">
+<meta property="og:description" content="The poker trainer that doesn't suck. 30 modules, combo streaks, spaced repetition.">
 <meta property="og:image" content="https://jack108510.github.io/pokertime-1.2/icon-512.png">
-<meta property="og:url" content="https://jack108510.github.io/pokertime-landing/">
-<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://jack108510.github.io/pokertime-landing/">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#0f0a1a;--surface:#1a1333;--surface2:#241b45;--purple:#6c3ce0;--purple-glow:rgba(108,60,234,.3);--blue:#60a5fa;--text:#e2e8f0;--text-dim:#94a3b8;--accent:#fbbf24;--radius:16px}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;overflow-x:hidden}
+body{background:#0a0a0f;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;overflow-x:hidden}
 
-.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(108,60,234,.15) 0%,transparent 70%);pointer-events:none}
-.hero-icon{width:120px;height:120px;background:linear-gradient(135deg,var(--purple),#8b5cf6);border-radius:28px;display:flex;align-items:center;justify-content:center;font-size:60px;margin-bottom:28px;box-shadow:0 8px 40px var(--purple-glow);position:relative}
-.hero-icon::after{content:'';position:absolute;inset:-4px;border-radius:32px;border:2px solid rgba(255,255,255,.1)}
-.hero h1{font-size:3rem;font-weight:900;letter-spacing:-1px;margin-bottom:8px}.hero h1 span{color:var(--accent)}
-.hero-sub{font-size:1.15rem;color:var(--text-dim);line-height:1.6;max-width:420px;margin-bottom:36px}
-.cta{display:inline-flex;align-items:center;gap:8px;padding:18px 48px;background:var(--purple);color:#fff;font-size:1.05rem;font-weight:800;border:none;border-radius:60px;cursor:pointer;text-decoration:none;box-shadow:0 4px 24px var(--purple-glow);transition:all .2s;letter-spacing:.5px}
-.cta:hover{transform:translateY(-2px);box-shadow:0 8px 32px var(--purple-glow)}
-.cta-sub{font-size:.85rem;color:var(--text-dim);margin-top:12px}
-.hero-scroll{position:absolute;bottom:32px;color:var(--text-dim);font-size:.8rem;animation:bounce 2s infinite}
-@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+/* Hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 20px;position:relative}
+.hero-glow{position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(108,60,234,.12),transparent 70%);pointer-events:none}
+.badge{display:inline-block;background:rgba(251,191,36,.1);color:#fbbf24;border:1px solid rgba(251,191,36,.2);border-radius:20px;padding:5px 14px;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:24px}
+.hero h1{font-size:2.8rem;font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:16px}
+.hero h1 .white{color:#fff}.hero h1 .gold{color:#fbbf24}
+.hero p{font-size:1rem;color:#94a3b8;line-height:1.7;max-width:380px;margin-bottom:32px}
+.cta{display:inline-block;padding:16px 44px;background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#0a0a0f;font-size:1rem;font-weight:800;border:none;border-radius:50px;cursor:pointer;text-decoration:none;letter-spacing:.3px;transition:all .2s;box-shadow:0 4px 20px rgba(251,191,36,.3)}
+.cta:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(251,191,36,.4)}
+.sub{font-size:.82rem;color:#64748b;margin-top:12px}
 
-.features{padding:80px 24px;max-width:600px;margin:0 auto}
-.feat-grid{display:grid;gap:16px;margin-top:40px}
-.feat-card{background:var(--surface);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:24px}
-.feat-icon{font-size:32px;margin-bottom:12px}
-.feat-title{font-size:1.05rem;font-weight:800;margin-bottom:6px}
-.feat-desc{font-size:.88rem;color:var(--text-dim);line-height:1.6}
-.section-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--purple);text-align:center}
-.section-title{font-size:1.6rem;font-weight:900;text-align:center;margin-top:6px}
+/* Proof */
+.proof{padding:40px 20px;text-align:center;border-top:1px solid rgba(255,255,255,.04)}
+.proof-grid{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.proof-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:16px 20px;text-align:center;flex:1;min-width:100px}
+.proof-num{font-size:1.4rem;font-weight:900;color:#fbbf24}
+.proof-lbl{font-size:.7rem;color:#64748b;margin-top:2px;text-transform:uppercase;letter-spacing:.05em}
 
-.screenshots{padding:60px 24px;text-align:center}
-.phone-frame{width:280px;height:560px;background:var(--surface);border-radius:36px;border:3px solid rgba(255,255,255,.08);margin:0 auto 24px;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.5)}
-.phone-notch{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:80px;height:24px;background:var(--bg);border-radius:0 0 14px 14px}
-.phone-screen{width:100%;height:100%;background:linear-gradient(180deg,#0f0a1a,#1a1333);display:flex;flex-direction:column;align-items:center;padding-top:60px}
-.phone-chip{width:80px;height:80px;background:linear-gradient(135deg,var(--purple),#8b5cf6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:40px;animation:spin 4s linear infinite;margin-bottom:20px}
-@keyframes spin{0%{transform:rotateY(0)}100%{transform:rotateY(360deg)}}
-.phone-title{font-size:1.4rem;font-weight:900;margin-bottom:4px}
-.phone-title span{color:var(--accent)}
-.phone-sub{font-size:.75rem;color:var(--text-dim)}
+/* Why */
+.why{padding:60px 20px;max-width:500px;margin:0 auto}
+.why-title{text-align:center;font-size:1.5rem;font-weight:900;margin-bottom:8px}
+.why-sub{text-align:center;font-size:.88rem;color:#64748b;margin-bottom:32px;line-height:1.6}
+.feature{display:flex;gap:14px;align-items:flex-start;margin-bottom:24px}
+.feat-emoji{font-size:28px;width:40px;text-align:center;flex-shrink:0;margin-top:2px}
+.feat-text h3{font-size:.92rem;font-weight:800;margin-bottom:3px}
+.feat-text p{font-size:.82rem;color:#94a3b8;line-height:1.55}
 
-.levels{padding:80px 24px;max-width:600px;margin:0 auto}
-.level{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px}
-.level-num{width:40px;height:40px;border-radius:12px;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:var(--purple);flex-shrink:0;border:1px solid rgba(108,60,234,.2)}
-.level-info h3{font-size:.95rem;font-weight:800;margin-bottom:2px}
-.level-info p{font-size:.82rem;color:var(--text-dim);line-height:1.5}
+/* Module list */
+.modules{padding:60px 20px;border-top:1px solid rgba(255,255,255,.04)}
+.modules-title{text-align:center;font-size:1.3rem;font-weight:900;margin-bottom:24px}
+.mod-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.mod-num{font-size:.7rem;font-weight:800;color:#6c3ce0;width:28px;flex-shrink:0}
+.mod-name{font-size:.88rem;font-weight:700;flex:1}
+.mod-lessons{font-size:.72rem;color:#64748b}
 
-.cta-section{padding:80px 24px;text-align:center}
-.cta-section h2{font-size:1.8rem;font-weight:900;margin-bottom:12px}
-.cta-section p{font-size:1rem;color:var(--text-dim);margin-bottom:32px;max-width:400px;margin-left:auto;margin-right:auto}
+/* Bottom CTA */
+.bottom-cta{padding:80px 20px;text-align:center;border-top:1px solid rgba(255,255,255,.04)}
+.bottom-cta h2{font-size:1.8rem;font-weight:900;margin-bottom:12px}
+.bottom-cta p{font-size:.92rem;color:#94a3b8;margin-bottom:28px;max-width:340px;margin-left:auto;margin-right:auto;line-height:1.6}
 
-footer{padding:32px 24px;text-align:center;border-top:1px solid rgba(255,255,255,.05)}
-footer p{font-size:.8rem;color:var(--text-dim)}
-footer a{color:var(--purple);text-decoration:none}
+footer{padding:24px 20px;text-align:center;border-top:1px solid rgba(255,255,255,.04)}
+footer p{font-size:.75rem;color:#475569}
 
-@media(max-width:400px){.hero h1{font-size:2.4rem}.phone-frame{width:240px;height:480px}}
+@media(max-width:380px){.hero h1{font-size:2.2rem}}
 </style>
 </head>
 <body>
 
 <section class="hero">
-  <div class="hero-icon">♠</div>
-  <h1>Poker<span>Time</span></h1>
-  <p class="hero-sub">Learn poker strategy in 5 minutes a day. Interactive quizzes, combo streaks, and spaced repetition — like Duolingo for poker.</p>
-  <a class="cta" href="https://jack108510.github.io/pokertime-1.2/">Start Learning — Free</a>
-  <p class="cta-sub">No signup. No download. Just open and play.</p>
-  <div class="hero-scroll">↓</div>
+  <div class="hero-glow"></div>
+  <div class="badge">Free · No Signup · Works on Any Phone</div>
+  <h1><span class="white">Learn poker.</span><br/><span class="gold">Actually get good.</span></h1>
+  <p>5 minutes a day. Interactive quizzes. Combo streaks. Spaced repetition. No boring videos, no reading chapters — just sharp gameplay that makes you think.</p>
+  <a class="cta" href="https://jack108510.github.io/pokertime-1.2/">Start Now</a>
+  <p class="sub">Takes 10 seconds to load. Your progress saves automatically.</p>
 </section>
 
-<section class="features">
-  <div class="section-label">Why PokerTime</div>
-  <div class="section-title">Poker strategy, gamified</div>
-  <div class="feat-grid">
-    <div class="feat-card">
-      <div class="feat-icon">🎯</div>
-      <div class="feat-title">30 Interactive Modules</div>
-      <div class="feat-desc">From card values to championship tournament strategy. Every skill level covered.</div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">⚡</div>
-      <div class="feat-title">Combo Streaks</div>
-      <div class="feat-desc">Answer correctly in a row for bonus XP. Keep your streak alive with daily practice.</div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">🧠</div>
-      <div class="feat-title">Spaced Repetition</div>
-      <div class="feat-desc">The same system Duolingo uses. Review what you've learned before you forget it.</div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">🏆</div>
-      <div class="feat-title">Achievements & Progress</div>
-      <div class="feat-desc">Unlock badges, track your XP, and level up from beginner to mastery.</div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">📱</div>
-      <div class="feat-title">Mobile-First</div>
-      <div class="feat-desc">Built for your phone. Install it as an app — works offline too.</div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">💡</div>
-      <div class="feat-title">Mini-Lessons</div>
-      <div class="feat-desc">Quick strategy tips before each quiz. Learn the concept, then test yourself.</div>
-    </div>
+<section class="proof">
+  <div style="font-size:.7rem;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.1em">What's inside</div>
+  <div class="proof-grid">
+    <div class="proof-item"><div class="proof-num">30</div><div class="proof-lbl">Modules</div></div>
+    <div class="proof-item"><div class="proof-num">5</div><div class="proof-lbl">Skill Levels</div></div>
+    <div class="proof-item"><div class="proof-num">250+</div><div class="proof-lbl">Questions</div></div>
+    <div class="proof-item"><div class="proof-num">∞</div><div class="proof-lbl">Free</div></div>
   </div>
 </section>
 
-<section class="screenshots">
-  <div class="section-label">See It In Action</div>
-  <div class="section-title" style="margin-bottom:32px">Looks like this</div>
-  <div class="phone-frame">
-    <div class="phone-notch"></div>
-    <div class="phone-screen">
-      <div class="phone-chip">♠</div>
-      <div class="phone-title">POKER<span style="color:var(--accent)">TIME</span></div>
-      <div class="phone-sub">MASTER THE GAME</div>
-    </div>
+<section class="why">
+  <div class="why-title">Not another poker app.</div>
+  <div class="why-sub">Most poker apps are either casino games that teach you nothing, or boring video courses that put you to sleep. PokerTime is different.</div>
+  <div class="feature">
+    <div class="feat-emoji">⚡</div>
+    <div class="feat-text"><h3>Combo streaks</h3><p>Answer correctly in a row and watch your multiplier climb. Miss one and it resets. Addictive in the right way.</p></div>
+  </div>
+  <div class="feature">
+    <div class="feat-emoji">🧠</div>
+    <div class="feat-text"><h3>Spaced repetition</h3><p>The same system Duolingo uses. We bring back what you're about to forget, right before you forget it.</p></div>
+  </div>
+  <div class="feature">
+    <div class="feat-emoji">🎯</div>
+    <div class="feat-text"><h3>Mini-lessons</h3><p>Quick strategy tip before each quiz. Learn the concept, then test yourself immediately.</p></div>
+  </div>
+  <div class="feature">
+    <div class="feat-emoji">🏆</div>
+    <div class="feat-text"><h3>Achievements</h3><p>Unlock badges as you progress. First Steps, Combo King, Week Warrior, and more.</p></div>
+  </div>
+  <div class="feature">
+    <div class="feat-emoji">📱</div>
+    <div class="feat-text"><h3>Works like an app</h3><p>Install it on your phone's home screen. Works offline. No App Store needed.</p></div>
   </div>
 </section>
 
-<section class="levels">
-  <div class="section-label">Curriculum</div>
-  <div class="section-title" style="margin-bottom:32px">5 levels of mastery</div>
-  <div class="level"><div class="level-num">L1</div><div class="level-info"><h3>Basics</h3><p>Card values, hand rankings, pot odds, position, betting, and bluffing fundamentals.</p></div></div>
-  <div class="level"><div class="level-num">L2</div><div class="level-info"><h3>Strategy</h3><p>Range reading, pre-flop strategy, GTO basics, tournament play, tells, and advanced moves.</p></div></div>
-  <div class="level"><div class="level-num">L3</div><div class="level-info"><h3>Advanced</h3><p>Multiway pots, board texture, c-betting, short stack play, 3-bet pots, and exploitative play.</p></div></div>
-  <div class="level"><div class="level-num">L4</div><div class="level-info"><h3>Expert</h3><p>Range balancing, polarized ranges, bet sizing theory, turn & river play, mental game, and hand reading.</p></div></div>
-  <div class="level"><div class="level-num">L5</div><div class="level-info"><h3>Mastery</h3><p>Final table ICM, bounty tournaments, mixed games, heads-up, deep runs, and championship mindset.</p></div></div>
+<section class="modules">
+  <div class="modules-title">5 levels. Zero fluff.</div>
+  <div class="mod-row"><div class="mod-num">L1</div><div class="mod-name">Basics</div><div class="mod-lessons">6 modules</div></div>
+  <div class="mod-row"><div class="mod-num">L2</div><div class="mod-name">Strategy</div><div class="mod-lessons">6 modules</div></div>
+  <div class="mod-row"><div class="mod-num">L3</div><div class="mod-name">Advanced</div><div class="mod-lessons">6 modules</div></div>
+  <div class="mod-row"><div class="mod-num">L4</div><div class="mod-name">Expert</div><div class="mod-lessons">6 modules</div></div>
+  <div class="mod-row" style="border:none"><div class="mod-num">L5</div><div class="mod-name">Mastery</div><div class="mod-lessons">6 modules</div></div>
 </section>
 
-<section class="cta-section">
-  <h2>Ready to level up?</h2>
-  <p>It's free. No signup. No catch. Just open it and start learning.</p>
-  <a class="cta" href="https://jack108510.github.io/pokertime-1.2/">Start Learning — Free</a>
+<section class="bottom-cta">
+  <h2>Your first lesson<br/>is 60 seconds away.</h2>
+  <p>No signup. No download. No credit card. Open it and start playing.</p>
+  <a class="cta" href="https://jack108510.github.io/pokertime-1.2/">Start Now</a>
 </section>
 
 <footer>
-  <p>Built by <a href="https://wildeautomations.ca">Wilde Automations</a> · <a href="mailto:jack@wildroseautomations.ca">Contact</a></p>
+  <p>Built with ♠ by people who got tired of bad poker apps</p>
 </footer>
 
 </body>
