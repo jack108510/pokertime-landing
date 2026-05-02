@@ -5,51 +5,51 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PokerTime — Learn Poker in 5 Min/Day</title>
 <meta name="description" content="Free poker trainer with interactive quizzes. 30 modules, combo streaks, spaced repetition. Like Duolingo for poker.">
-<meta name="theme-color" content="#0f0a1a">
+<meta name="theme-color" content="#13111c">
 <meta property="og:title" content="PokerTime — Learn Poker in 5 Min/Day">
 <meta property="og:description" content="Interactive poker quizzes with combo streaks and spaced repetition. 30 modules, free.">
 <meta property="og:image" content="https://jack108510.github.io/pokertime-landing/screenshot.png">
 <link rel="canonical" href="https://jack108510.github.io/pokertime-landing/">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#0a0a0f;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{background:#13111c;color:#f0edff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
 .hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 20px;position:relative}
-.glow{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(108,60,234,.1),transparent 70%);pointer-events:none}
+.glow{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(108,92,231,.1),transparent 70%);pointer-events:none}
 .hero h1{font-size:2.6rem;font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:12px}
-.hero h1 .accent{color:#fbbf24}
-.hero p{font-size:.95rem;color:#94a3b8;line-height:1.65;max-width:360px;margin-bottom:28px}
-.cta{display:inline-block;padding:16px 44px;background:#fbbf24;color:#0a0a0f;font-size:.95rem;font-weight:800;border:none;border-radius:50px;cursor:pointer;text-decoration:none;transition:all .2s;box-shadow:0 4px 24px rgba(251,191,36,.25)}
-.cta:hover{transform:translateY(-2px);box-shadow:0 6px 32px rgba(251,191,36,.35)}
-.hint{font-size:.78rem;color:#475569;margin-top:10px}
+.hero h1 .accent{color:#ffd93d}
+.hero p{font-size:.95rem;color:#8b85a6;line-height:1.65;max-width:360px;margin-bottom:28px}
+.cta{display:inline-block;padding:16px 44px;background:#6c5ce7;color:#fff;font-size:.95rem;font-weight:800;border:none;border-radius:50px;cursor:pointer;text-decoration:none;transition:all .2s;box-shadow:0 4px 24px rgba(108,92,231,.3)}
+.cta:hover{transform:translateY(-2px);box-shadow:0 6px 32px rgba(108,92,231,.4)}
+.hint{font-size:.78rem;color:#5a5478;margin-top:10px}
 
 /* Phone screenshot */
 .showcase{padding:0 20px 60px;text-align:center}
-.phone{max-width:320px;margin:0 auto;border-radius:32px;overflow:hidden;border:3px solid rgba(255,255,255,.08);box-shadow:0 20px 80px rgba(0,0,0,.6)}
+.phone{max-width:320px;margin:0 auto;border-radius:32px;overflow:hidden;border:3px solid #2d2945;box-shadow:0 20px 80px rgba(0,0,0,.6)}
 .phone img{width:100%;display:block}
 
 /* Copy blocks */
 .block{padding:48px 20px;max-width:480px;margin:0 auto}
 .block h2{font-size:1.4rem;font-weight:900;margin-bottom:10px;line-height:1.2}
-.block p{font-size:.88rem;color:#94a3b8;line-height:1.65;margin-bottom:16px}
-.block + .block{border-top:1px solid rgba(255,255,255,.04)}
+.block p{font-size:.88rem;color:#8b85a6;line-height:1.65;margin-bottom:16px}
+.block + .block{border-top:1px solid #2d2945}
 
-.tag{display:inline-block;background:rgba(251,191,36,.08);color:#fbbf24;border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
+.tag{display:inline-block;background:rgba(255,217,61,.1);color:#ffd93d;border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
 
 .level-list{margin-top:20px}
-.level{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:center}
+.level{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #2d2945;align-items:center}
 .level:last-child{border:none}
 .level-n{font-size:.72rem;font-weight:800;color:#6c3ce0;width:24px}
 .level-name{font-size:.85rem;font-weight:700;flex:1}
-.level-count{font-size:.72rem;color:#475569}
+.level-count{font-size:.72rem;color:#5a5478}
 
 /* Bottom CTA */
 .final{padding:64px 20px;text-align:center}
 .final h2{font-size:1.6rem;font-weight:900;margin-bottom:10px}
-.final p{font-size:.88rem;color:#94a3b8;margin-bottom:24px;max-width:320px;margin-left:auto;margin-right:auto;line-height:1.6}
+.final p{font-size:.88rem;color:#8b85a6;margin-bottom:24px;max-width:320px;margin-left:auto;margin-right:auto;line-height:1.6}
 
 footer{padding:20px;text-align:center}
-footer p{font-size:.72rem;color:#334155}
+footer p{font-size:.72rem;color:#5a5478}
 
 @media(max-width:380px){.hero h1{font-size:2.1rem}}
 </style>
