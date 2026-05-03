@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PokerTime — Learn Poker in 5 Min/Day</title>
-<meta name="description" content="Free poker trainer with interactive quizzes. 30 modules, combo streaks, spaced repetition. Learn poker fast.">
+<meta name="description" content="Interactive poker quizzes with combo streaks and spaced repetition. 30 modules, free.">
 <meta name="theme-color" content="#13111c">
 <meta property="og:title" content="PokerTime — Learn Poker in 5 Min/Day">
 <meta property="og:description" content="Interactive poker quizzes with combo streaks and spaced repetition. 30 modules, free.">
@@ -19,37 +19,55 @@ body{background:#13111c;color:#f0edff;font-family:-apple-system,BlinkMacSystemFo
 .hero h1{font-size:2.6rem;font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:12px}
 .hero h1 .accent{color:#ffd93d}
 .hero p{font-size:.95rem;color:#8b85a6;line-height:1.65;max-width:360px;margin-bottom:28px}
-.cta{display:inline-block;padding:16px 44px;background:#6c5ce7;color:#fff;font-size:.95rem;font-weight:800;border:none;border-radius:50px;cursor:pointer;text-decoration:none;transition:all .2s;box-shadow:0 4px 24px rgba(108,92,231,.3)}
+.cta{display:inline-block;padding:16px 44px;background:linear-gradient(135deg,#6c5ce7,#8b5cf6);color:#fff;font-size:.95rem;font-weight:800;border:none;border-radius:50px;cursor:pointer;text-decoration:none;transition:all .2s;box-shadow:0 4px 24px rgba(108,92,231,.3)}
 .cta:hover{transform:translateY(-2px);box-shadow:0 6px 32px rgba(108,92,231,.4)}
 .hint{font-size:.78rem;color:#5a5478;margin-top:10px}
 
-/* Phone screenshot */
-.showcase{padding:0 20px 60px;text-align:center}
 .phone{max-width:320px;margin:0 auto;border-radius:32px;overflow:hidden;border:3px solid #2d2945;box-shadow:0 20px 80px rgba(0,0,0,.6)}
 .phone img{width:100%;display:block}
 
-/* Copy blocks */
 .block{padding:48px 20px;max-width:480px;margin:0 auto}
 .block h2{font-size:1.4rem;font-weight:900;margin-bottom:10px;line-height:1.2}
 .block p{font-size:.88rem;color:#8b85a6;line-height:1.65;margin-bottom:16px}
-.block + .block{border-top:1px solid #2d2945}
+.block+.block{border-top:1px solid #2d2945}
 
 .tag{display:inline-block;background:rgba(255,217,61,.1);color:#ffd93d;border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
 
-.level-list{margin-top:20px}
-.level{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #2d2945;align-items:center}
-.level:last-child{border:none}
-.level-n{font-size:.72rem;font-weight:800;color:#6c3ce0;width:24px}
-.level-name{font-size:.85rem;font-weight:700;flex:1}
-.level-count{font-size:.72rem;color:#5a5478}
+.feature{display:flex;gap:14px;align-items:flex-start;margin-bottom:24px}
+.feat-emoji{font-size:28px;width:40px;text-align:center;flex-shrink:0;margin-top:2px}
+.feat-text h3{font-size:.92rem;font-weight:800;margin-bottom:3px}
+.feat-text p{font-size:.82rem;color:#8b85a6;line-height:1.55}
 
-/* Bottom CTA */
-.final{padding:64px 20px;text-align:center}
+.mod-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #2d2945;align-items:center}
+.mod-row:last-child{border:none}
+.mod-n{font-size:.72rem;font-weight:800;color:#6c5ce0;width:24px}
+.mod-name{font-size:.88rem;font-weight:700;flex:1}
+.mod-count{font-size:.72rem;color:#5a5478}
+
+/* PRICING */
+.pricing{padding:48px 20px;border-top:1px solid #2d2945;text-align:center}
+.pricing h2{font-size:1.5rem;font-weight:900;margin-bottom:8px}
+.pricing>p{font-size:.88rem;color:#8b85a6;margin-bottom:24px;line-height:1.5}
+.price-cards{display:grid;gap:14px;max-width:400px;margin:0 auto 24px}
+.price-card{background:#1a1730;border:2px solid #2d2945;border-radius:16px;padding:24px;text-align:center;transition:all .2s}
+.price-card.popular{border-color:#6c5ce7;box-shadow:0 0 30px rgba(108,92,231,.15)}
+.price-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#8b85a6;margin-bottom:6px}
+.price-amount{font-size:2.2rem;font-weight:900;color:#fff;margin-bottom:2px}
+.price-amount small{font-size:.9rem;color:#8b85a6;font-weight:600}
+.price-features{list-style:none;margin:12px 0 16px;text-align:left}
+.price-features li{font-size:.8rem;color:#8b85a6;padding:4px 0;padding-left:20px;position:relative}
+.price-features li::before{content:'✓';position:absolute;left:0;color:#6c5ce7;font-weight:700}
+.price-btn{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#6c5ce7,#8b5cf6);color:#fff;font-size:.88rem;font-weight:700;border-radius:50px;text-decoration:none;transition:all .2s;box-shadow:0 3px 16px rgba(108,92,231,.25)}
+.price-btn:hover{transform:translateY(-1px)}
+.price-btn.free{background:transparent;border:2px solid #2d2945;box-shadow:none;color:#f0edff}
+
+.final{padding:64px 20px;text-align:center;border-top:1px solid #2d2945}
 .final h2{font-size:1.6rem;font-weight:900;margin-bottom:10px}
 .final p{font-size:.88rem;color:#8b85a6;margin-bottom:24px;max-width:320px;margin-left:auto;margin-right:auto;line-height:1.6}
 
 footer{padding:20px;text-align:center}
 footer p{font-size:.72rem;color:#5a5478}
+footer a{color:#6c5ce7;text-decoration:none}
 
 @media(max-width:380px){.hero h1{font-size:2.1rem}}
 </style>
@@ -64,45 +82,76 @@ footer p{font-size:.72rem;color:#5a5478}
   <p class="hint">No signup. Opens in your browser. Works on any phone.</p>
 </section>
 
-<section class="showcase">
+<section style="padding:0 20px 60px;text-align:center">
   <div class="phone">
-    <img src="screenshot.png" alt="PokerTime quiz showing card comparison question with AK vs KQ" width="640" height="1344"/>
+    <img src="screenshot.png" alt="PokerTime quiz showing card comparison" width="640" height="1344"/>
   </div>
 </section>
 
 <section class="block">
   <div class="tag">How it works</div>
   <h2>Quiz-first learning.</h2>
-  <p>No videos to skip through. No chapters to read. You get a question, you answer, you learn instantly. Every answer comes with an explanation of why it's right or wrong.</p>
+  <p>No videos to skip through. No chapters to read. You get a question, you answer, you learn instantly. Every answer comes with an explanation.</p>
   <p>Miss a question? You'll see it again before you forget it. That's spaced repetition — the same system language apps use to make things stick.</p>
 </section>
 
 <section class="block">
   <div class="tag">Gamified</div>
   <h2>Combos, streaks, achievements.</h2>
-  <p>Answer correctly in a row and your XP multiplier climbs. Keep a daily streak alive. Unlock badges as you level up. It's designed to make you come back tomorrow.</p>
+  <div class="feature"><div class="feat-emoji">⚡</div><div class="feat-text"><h3>Combo streaks</h3><p>Answer correctly in a row and your XP multiplier climbs. Miss one and it resets.</p></div></div>
+  <div class="feature"><div class="feat-emoji">🧠</div><div class="feat-text"><h3>Smart review</h3><p>Brings back what you're about to forget, right before you forget it.</p></div></div>
+  <div class="feature"><div class="feat-emoji">🏆</div><div class="feat-text"><h3>Rank system</h3><p>Fish → Rookie → Shark → Pro → Legend. Earn XP and climb.</p></div></div>
 </section>
 
 <section class="block">
   <div class="tag">5 levels</div>
   <h2>From "what beats what" to final table strategy.</h2>
-  <div class="level-list">
-    <div class="level"><div class="level-n">L1</div><div class="level-name">Basics</div><div class="level-count">6 modules</div></div>
-    <div class="level"><div class="level-n">L2</div><div class="level-name">Strategy</div><div class="level-count">6 modules</div></div>
-    <div class="level"><div class="level-n">L3</div><div class="level-name">Advanced</div><div class="level-count">6 modules</div></div>
-    <div class="level"><div class="level-n">L4</div><div class="level-name">Expert</div><div class="level-count">6 modules</div></div>
-    <div class="level"><div class="level-n">L5</div><div class="level-name">Mastery</div><div class="level-count">6 modules</div></div>
+  <div class="mod-row"><div class="mod-n">L1</div><div class="mod-name">Basics</div><div class="mod-count">6 modules</div></div>
+  <div class="mod-row"><div class="mod-n">L2</div><div class="mod-name">Strategy</div><div class="mod-count">6 modules</div></div>
+  <div class="mod-row"><div class="mod-n">L3</div><div class="mod-name">Advanced</div><div class="mod-count">6 modules</div></div>
+  <div class="mod-row"><div class="mod-n">L4</div><div class="mod-name">Expert</div><div class="mod-count">6 modules</div></div>
+  <div class="mod-row" style="border:none"><div class="mod-n">L5</div><div class="mod-name">Mastery</div><div class="mod-count">6 modules</div></div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <h2>Free to start. Upgrade anytime.</h2>
+  <p>Level 1 is free forever. Unlock the full 30 modules and advanced features with Pro.</p>
+  <div class="price-cards">
+    <div class="price-card">
+      <div class="price-label">Free</div>
+      <div class="price-amount">$0</div>
+      <ul class="price-features">
+        <li>Level 1 — Basics (6 modules)</li>
+        <li>Combo streaks & achievements</li>
+        <li>Spaced repetition review</li>
+        <li>Rank system</li>
+      </ul>
+      <a class="price-btn free" href="https://jack108510.github.io/pokertime-1.2/">Start Free</a>
+    </div>
+    <div class="price-card popular">
+      <div class="price-label" style="color:#ffd93d">Most Popular</div>
+      <div class="price-amount">$4.99<small>/month</small></div>
+      <ul class="price-features">
+        <li>All 30 modules (5 levels)</li>
+        <li>Weakness tracking & review</li>
+        <li>Advanced hand reading lab</li>
+        <li>Tournament & bounty modules</li>
+        <li>Priority new content</li>
+      </ul>
+      <a class="price-btn" href="https://buy.stripe.com/pokertime-pro">Get Pro</a>
+    </div>
   </div>
 </section>
 
 <section class="final">
-  <h2>30 modules.<br/>250+ questions.<br/>Zero dollars.</h2>
-  <p>It's free. It takes 5 minutes. And you'll actually learn something. Open it and try the first quiz.</p>
+  <h2>Your first lesson<br/>is 60 seconds away.</h2>
+  <p>No signup. No download. No credit card. Open it and start playing.</p>
   <a class="cta" href="https://jack108510.github.io/pokertime-1.2/">Play Now</a>
 </section>
 
 <footer>
-  <p>PokerTime</p>
+  <p>PokerTime · <a href="mailto:support@wildroseautomations.ca">Contact</a></p>
 </footer>
 
 </body>
