@@ -5,69 +5,69 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PokerTime — Learn Poker in 5 Min/Day</title>
 <meta name="description" content="Interactive poker quizzes with combo streaks and spaced repetition. 30 modules, free.">
-<meta name="theme-color" content="#13111c">
+<meta name="theme-color" content="#0f1a0f">
 <meta property="og:title" content="PokerTime — Learn Poker in 5 Min/Day">
 <meta property="og:description" content="Interactive poker quizzes with combo streaks and spaced repetition. 30 modules, free.">
 <meta property="og:image" content="https://jack108510.github.io/pokertime-landing/screenshot.png">
 <link rel="canonical" href="https://jack108510.github.io/pokertime-landing/">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#13111c;color:#f0edff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{background:#0f1a0f;color:#e8f5e8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
 .hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 20px;position:relative}
-.glow{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(108,92,231,.1),transparent 70%);pointer-events:none}
+.glow{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(34,197,94,.1),transparent 70%);pointer-events:none}
 .hero h1{font-size:2.6rem;font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:12px}
 .hero h1 .accent{color:#ffd93d}
-.hero p{font-size:.95rem;color:#8b85a6;line-height:1.65;max-width:360px;margin-bottom:28px}
-.cta{display:inline-block;padding:16px 44px;background:linear-gradient(135deg,#6c5ce7,#8b5cf6);color:#fff;font-size:.95rem;font-weight:800;border:none;border-radius:50px;cursor:pointer;text-decoration:none;transition:all .2s;box-shadow:0 4px 24px rgba(108,92,231,.3)}
-.cta:hover{transform:translateY(-2px);box-shadow:0 6px 32px rgba(108,92,231,.4)}
-.hint{font-size:.78rem;color:#5a5478;margin-top:10px}
+.hero p{font-size:.95rem;color:#7fa87f;line-height:1.65;max-width:360px;margin-bottom:28px}
+.cta{display:inline-block;padding:16px 44px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-size:.95rem;font-weight:800;border:none;border-radius:50px;cursor:pointer;text-decoration:none;transition:all .2s;box-shadow:0 4px 24px rgba(34,197,94,.3)}
+.cta:hover{transform:translateY(-2px);box-shadow:0 6px 32px rgba(34,197,94,.4)}
+.hint{font-size:.78rem;color:#4a6a4a;margin-top:10px}
 
-.phone{max-width:320px;margin:0 auto;border-radius:32px;overflow:hidden;border:3px solid #2d2945;box-shadow:0 20px 80px rgba(0,0,0,.6)}
+.phone{max-width:320px;margin:0 auto;border-radius:32px;overflow:hidden;border:3px solid #2a3a2a;box-shadow:0 20px 80px rgba(0,0,0,.6)}
 .phone img{width:100%;display:block}
 
 .block{padding:48px 20px;max-width:480px;margin:0 auto}
 .block h2{font-size:1.4rem;font-weight:900;margin-bottom:10px;line-height:1.2}
-.block p{font-size:.88rem;color:#8b85a6;line-height:1.65;margin-bottom:16px}
-.block+.block{border-top:1px solid #2d2945}
+.block p{font-size:.88rem;color:#7fa87f;line-height:1.65;margin-bottom:16px}
+.block+.block{border-top:1px solid #2a3a2a}
 
 .tag{display:inline-block;background:rgba(255,217,61,.1);color:#ffd93d;border-radius:6px;padding:3px 10px;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
 
 .feature{display:flex;gap:14px;align-items:flex-start;margin-bottom:24px}
 .feat-emoji{font-size:28px;width:40px;text-align:center;flex-shrink:0;margin-top:2px}
 .feat-text h3{font-size:.92rem;font-weight:800;margin-bottom:3px}
-.feat-text p{font-size:.82rem;color:#8b85a6;line-height:1.55}
+.feat-text p{font-size:.82rem;color:#7fa87f;line-height:1.55}
 
-.mod-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #2d2945;align-items:center}
+.mod-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #2a3a2a;align-items:center}
 .mod-row:last-child{border:none}
 .mod-n{font-size:.72rem;font-weight:800;color:#6c5ce0;width:24px}
 .mod-name{font-size:.88rem;font-weight:700;flex:1}
-.mod-count{font-size:.72rem;color:#5a5478}
+.mod-count{font-size:.72rem;color:#4a6a4a}
 
 /* PRICING */
-.pricing{padding:48px 20px;border-top:1px solid #2d2945;text-align:center}
+.pricing{padding:48px 20px;border-top:1px solid #2a3a2a;text-align:center}
 .pricing h2{font-size:1.5rem;font-weight:900;margin-bottom:8px}
-.pricing>p{font-size:.88rem;color:#8b85a6;margin-bottom:24px;line-height:1.5}
+.pricing>p{font-size:.88rem;color:#7fa87f;margin-bottom:24px;line-height:1.5}
 .price-cards{display:grid;gap:14px;max-width:400px;margin:0 auto 24px}
-.price-card{background:#1a1730;border:2px solid #2d2945;border-radius:16px;padding:24px;text-align:center;transition:all .2s}
-.price-card.popular{border-color:#6c5ce7;box-shadow:0 0 30px rgba(108,92,231,.15)}
-.price-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#8b85a6;margin-bottom:6px}
+.price-card{background:#1a1730;border:2px solid #2a3a2a;border-radius:16px;padding:24px;text-align:center;transition:all .2s}
+.price-card.popular{border-color:#22c55e;box-shadow:0 0 30px rgba(34,197,94,.15)}
+.price-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7fa87f;margin-bottom:6px}
 .price-amount{font-size:2.2rem;font-weight:900;color:#fff;margin-bottom:2px}
-.price-amount small{font-size:.9rem;color:#8b85a6;font-weight:600}
+.price-amount small{font-size:.9rem;color:#7fa87f;font-weight:600}
 .price-features{list-style:none;margin:12px 0 16px;text-align:left}
-.price-features li{font-size:.8rem;color:#8b85a6;padding:4px 0;padding-left:20px;position:relative}
-.price-features li::before{content:'✓';position:absolute;left:0;color:#6c5ce7;font-weight:700}
-.price-btn{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#6c5ce7,#8b5cf6);color:#fff;font-size:.88rem;font-weight:700;border-radius:50px;text-decoration:none;transition:all .2s;box-shadow:0 3px 16px rgba(108,92,231,.25)}
+.price-features li{font-size:.8rem;color:#7fa87f;padding:4px 0;padding-left:20px;position:relative}
+.price-features li::before{content:'✓';position:absolute;left:0;color:#22c55e;font-weight:700}
+.price-btn{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-size:.88rem;font-weight:700;border-radius:50px;text-decoration:none;transition:all .2s;box-shadow:0 3px 16px rgba(34,197,94,.25)}
 .price-btn:hover{transform:translateY(-1px)}
-.price-btn.free{background:transparent;border:2px solid #2d2945;box-shadow:none;color:#f0edff}
+.price-btn.free{background:transparent;border:2px solid #2a3a2a;box-shadow:none;color:#e8f5e8}
 
-.final{padding:64px 20px;text-align:center;border-top:1px solid #2d2945}
+.final{padding:64px 20px;text-align:center;border-top:1px solid #2a3a2a}
 .final h2{font-size:1.6rem;font-weight:900;margin-bottom:10px}
-.final p{font-size:.88rem;color:#8b85a6;margin-bottom:24px;max-width:320px;margin-left:auto;margin-right:auto;line-height:1.6}
+.final p{font-size:.88rem;color:#7fa87f;margin-bottom:24px;max-width:320px;margin-left:auto;margin-right:auto;line-height:1.6}
 
 footer{padding:20px;text-align:center}
-footer p{font-size:.72rem;color:#5a5478}
-footer a{color:#6c5ce7;text-decoration:none}
+footer p{font-size:.72rem;color:#4a6a4a}
+footer a{color:#22c55e;text-decoration:none}
 
 @media(max-width:380px){.hero h1{font-size:2.1rem}}
 </style>
